@@ -60,10 +60,10 @@ export default Service.extend({
     const adapters = getWithDefault(config, 'analyticsAdapters', []);
     const owner = getOwner(this);
 
-    owner.registerOptionsForType('ember-cli-analytics@analytic', { instantiate: false });
+    owner.registerOptionsForType('ember-track-analytics@analytic', { instantiate: false });
     owner.registerOptionsForType('analytic', { instantiate: false });
 
-    owner.registerOptionsForType('ember-cli-analytics@analytics-param', { instantiate: false });
+    owner.registerOptionsForType('ember-track-analytics@analytics-param', { instantiate: false });
     owner.registerOptionsForType('analytics-param', { instantiate: false });
 
     setProperties(this, {
@@ -122,7 +122,7 @@ export default Service.extend({
   lookup(name, blueprint='analytic') {
     const container = getOwner(this);
     const dashedName = dasherize(name);
-    const remote = container.lookup(`ember-cli-analytics@${blueprint}:${dashedName}`);
+    const remote = container.lookup(`ember-track-analytics@${blueprint}:${dashedName}`);
     const local = getOwner(this).lookup(`${blueprint}:${dashedName}`);
 
     return local ? local : remote;

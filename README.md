@@ -1,4 +1,4 @@
-# ember-cli-analytics
+# ember-track-analytics
 
 Common framework for triggering analytics.
 1. Site Catalyst

@@ -1,5 +1,5 @@
 {
-  "name": "ember-cli-analytics",
+  "name": "ember-track-analytics",
   "version": "0.0.1",
   "description": "Ember addon to track analytics event.",
   "directories": {
@@ -11,7 +11,7 @@
     "start": "ember server",
     "test": "ember try:testall"
   },
-  "repository": "https://github.com/open-tux/ember-cli-analytics",
+  "repository": "https://github.com/open-tux/ember-track-analytics",
   "engines": {
     "node": ">= 0.10.0"
   },
@@ -41,9 +41,10 @@
   },
   "keywords": [
     "ember-addon",
-    "ember-cli-analytics",
+    "ember-track-analytics",
     "analytics",
-    "ember-analytics"
+    "ember-analytics",
+    "ember-cli-analytics"
   ],
   "dependencies": {
     "ember-cli-babel": "^5.1.6",

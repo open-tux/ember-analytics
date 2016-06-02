@@ -1,1 +1,1 @@
-export { default } from 'ember-cli-analytics/services/analytics';
+export { default } from 'ember-track-analytics/services/analytics';
