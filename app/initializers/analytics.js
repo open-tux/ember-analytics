@@ -9,6 +9,11 @@ export function initialize(/* application */) {
 
   // Inject router object into analytics service
   application.inject('service:analytics', 'router', 'router:main');
+
+  // Inject analytics service to route, controller and component
+  application.inject('route', 'analytics', 'service:analytics');
+  application.inject('controller', 'analytics', 'service:analytics');
+  application.inject('component', 'analytics', 'service:analytics');
 }
 
 export default {
