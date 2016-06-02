@@ -2,5 +2,5 @@
 'use strict';
 
 module.exports = {
-  name: 'ember-analytics'
+  name: 'ember-cli-analytics'
 };
